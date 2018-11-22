@@ -27,6 +27,8 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(unicorn_ros2_messages
   "msg/HrpSPToUni.msg"
   "msg/HrpUniToSP.msg"
+  "msg/UpdaterSPToUni.msg"
+  "msg/UpdaterUniToSP.msg"
   DEPENDENCIES builtin_interfaces
 )
 
@@ -42,11 +44,19 @@ if(BUILD_TESTING)
 endif()
 
 install(
-  FILES hrp_sp_to_unidriver_mpr.yaml
+  FILES hrp_sp_to_uni_mpr.yaml
   DESTINATION share/${PROJECT_NAME})
 
 install(
-  FILES hrp_unidriver_to_sp_mpr.yaml
+  FILES hrp_uni_to_sp_mpr.yaml
+  DESTINATION share/${PROJECT_NAME})
+
+install(
+  FILES updater_sp_to_uni_mpr.yaml
+  DESTINATION share/${PROJECT_NAME})
+
+install(
+  FILES updater_uni_to_sp_mpr.yaml
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()

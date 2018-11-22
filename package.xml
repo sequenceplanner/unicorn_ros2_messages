@@ -19,6 +19,10 @@
   <member_of_group>rosidl_interface_packages</member_of_group>
 
   <export>
+    <ros1_bridge mapping_rules="hrp_uni_to_sp_mpr.yaml"/>
+    <ros1_bridge mapping_rules="hrp_sp_to_uni_mpr.yaml"/>
+    <ros1_bridge mapping_rules="updater_uni_to_sp_mpr.yaml"/>
+    <ros1_bridge mapping_rules="updater_sp_to_uni_mpr.yaml"/>
     <build_type>ament_cmake</build_type>
   </export>
 </package>

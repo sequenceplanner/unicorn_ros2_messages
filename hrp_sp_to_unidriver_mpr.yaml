@@ -1,7 +1,0 @@
--
-  ros1_package_name: 'unicorn_roscontrol'
-  ros1_message_name: 'RobotSPToUni'
-  ros2_package_name: 'unicorn_ros2_messages'
-  ros2_message_name: 'RobotSPToUni'
-  fields_1_to_2:
-    ref_pos: 'ref_pos'
